@@ -1,0 +1,178 @@
+|projeto
+Saida[3] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Saida[2] <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+Saida[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Saida[0] <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+A[2] => Block2:inst.A2
+A[1] => Block2:inst.A1
+A[0] => Block2:inst.A0
+B[2] => Block2:inst.B2
+B[1] => Block2:inst.B1
+B[0] => Block2:inst.B0
+G[2] => Block4:ELSE.X[2]
+G[1] => Block4:ELSE.X[1]
+G[0] => Block4:ELSE.X[0]
+K[2] => Block4:IF.X[2]
+K[1] => Block4:IF.X[1]
+K[0] => Block4:IF.X[0]
+
+
+|projeto|Block2:inst
+saida <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+A2 => inst.IN0
+A2 => inst3.IN0
+B2 => inst.IN1
+A1 => inst4.IN1
+A1 => inst1.IN0
+B1 => inst1.IN1
+A0 => inst5.IN2
+A0 => inst2.IN0
+B0 => inst2.IN1
+
+
+|projeto|Block4:ELSE
+M[3] <= Block3:inst9.Cn
+M[2] <= Block3:inst9.F
+M[1] <= Block3:inst8.F
+M[0] <= Block3:inst7.F
+X[2] => Block3:inst9.A
+X[1] => Block3:inst8.A
+X[0] => Block3:inst7.A
+Y[2] => Block3:inst9.B
+Y[1] => Block3:inst8.B
+Y[0] => Block3:inst7.B
+
+
+|projeto|Block4:ELSE|Block3:inst7
+F <= inst37.DB_MAX_OUTPUT_PORT_TYPE
+B => inst25.IN0
+B => inst33.IN1
+B => inst35.IN2
+B => inst31.IN0
+B => inst30.IN1
+A => inst.IN0
+A => inst33.IN2
+A => inst34.IN2
+A => inst31.IN1
+A => inst32.IN1
+C => inst36.IN2
+C => inst33.IN0
+C => inst38.IN0
+C => inst32.IN0
+C => inst30.IN0
+Cn <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|Block4:ELSE|Block3:inst8
+F <= inst37.DB_MAX_OUTPUT_PORT_TYPE
+B => inst25.IN0
+B => inst33.IN1
+B => inst35.IN2
+B => inst31.IN0
+B => inst30.IN1
+A => inst.IN0
+A => inst33.IN2
+A => inst34.IN2
+A => inst31.IN1
+A => inst32.IN1
+C => inst36.IN2
+C => inst33.IN0
+C => inst38.IN0
+C => inst32.IN0
+C => inst30.IN0
+Cn <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|Block4:ELSE|Block3:inst9
+F <= inst37.DB_MAX_OUTPUT_PORT_TYPE
+B => inst25.IN0
+B => inst33.IN1
+B => inst35.IN2
+B => inst31.IN0
+B => inst30.IN1
+A => inst.IN0
+A => inst33.IN2
+A => inst34.IN2
+A => inst31.IN1
+A => inst32.IN1
+C => inst36.IN2
+C => inst33.IN0
+C => inst38.IN0
+C => inst32.IN0
+C => inst30.IN0
+Cn <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|Block4:IF
+M[3] <= Block3:inst9.Cn
+M[2] <= Block3:inst9.F
+M[1] <= Block3:inst8.F
+M[0] <= Block3:inst7.F
+X[2] => Block3:inst9.A
+X[1] => Block3:inst8.A
+X[0] => Block3:inst7.A
+Y[2] => Block3:inst9.B
+Y[1] => Block3:inst8.B
+Y[0] => Block3:inst7.B
+
+
+|projeto|Block4:IF|Block3:inst7
+F <= inst37.DB_MAX_OUTPUT_PORT_TYPE
+B => inst25.IN0
+B => inst33.IN1
+B => inst35.IN2
+B => inst31.IN0
+B => inst30.IN1
+A => inst.IN0
+A => inst33.IN2
+A => inst34.IN2
+A => inst31.IN1
+A => inst32.IN1
+C => inst36.IN2
+C => inst33.IN0
+C => inst38.IN0
+C => inst32.IN0
+C => inst30.IN0
+Cn <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|Block4:IF|Block3:inst8
+F <= inst37.DB_MAX_OUTPUT_PORT_TYPE
+B => inst25.IN0
+B => inst33.IN1
+B => inst35.IN2
+B => inst31.IN0
+B => inst30.IN1
+A => inst.IN0
+A => inst33.IN2
+A => inst34.IN2
+A => inst31.IN1
+A => inst32.IN1
+C => inst36.IN2
+C => inst33.IN0
+C => inst38.IN0
+C => inst32.IN0
+C => inst30.IN0
+Cn <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|Block4:IF|Block3:inst9
+F <= inst37.DB_MAX_OUTPUT_PORT_TYPE
+B => inst25.IN0
+B => inst33.IN1
+B => inst35.IN2
+B => inst31.IN0
+B => inst30.IN1
+A => inst.IN0
+A => inst33.IN2
+A => inst34.IN2
+A => inst31.IN1
+A => inst32.IN1
+C => inst36.IN2
+C => inst33.IN0
+C => inst38.IN0
+C => inst32.IN0
+C => inst30.IN0
+Cn <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+
+

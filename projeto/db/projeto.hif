@@ -1,0 +1,109 @@
+Quartus II 64-Bit
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+12
+1222
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+Block2
+# storage
+db|projeto.(1).cnf
+db|projeto.(1).cnf
+# case_insensitive
+# source_file
+block2.bdf
+6895c24cfa8c18afdf5fc9f7b2dde51a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Block2:inst
+}
+# macro_sequence
+
+# end
+# entity
+projeto
+# storage
+db|projeto.(0).cnf
+db|projeto.(0).cnf
+# case_insensitive
+# source_file
+projeto.bdf
+cd25228ca11e628135b39183de83e6d1
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+Block3
+# storage
+db|projeto.(2).cnf
+db|projeto.(2).cnf
+# case_insensitive
+# source_file
+block3.bdf
+dca2c938da4f1615ddf4a7aab835eece
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Block4:ELSE|Block3:inst7
+Block4:ELSE|Block3:inst8
+Block4:ELSE|Block3:inst9
+Block4:IF|Block3:inst7
+Block4:IF|Block3:inst8
+Block4:IF|Block3:inst9
+}
+# macro_sequence
+
+# end
+# entity
+Block4
+# storage
+db|projeto.(3).cnf
+db|projeto.(3).cnf
+# case_insensitive
+# source_file
+block4.bdf
+9b28ca2a15e95b7adb9c50738d3c2449
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Block4:ELSE
+Block4:IF
+}
+# macro_sequence
+
+# end
+# complete
+
