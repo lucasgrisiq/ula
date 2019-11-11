@@ -1,3 +1,3 @@
 # ula
 
-Low level impletementation of a ALU module in Verilog language. 
+Low level impletementation of a ALU module assigning logic gates on a FPGA board using the Quartus II software. 
